@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ctpreadout_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ctpreadout_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="992940000fs"></ZoomStartTime>
+      <ZoomEndTime time="1204340001fs"></ZoomEndTime>
+      <Cursor1Time time="1064513000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="263"></NameColumnWidth>
+      <ValueColumnWidth column_width="118"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="116" />
+   <wave_markers>
+      <marker time="1031085000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/ctpreadout_tb/clk_240" type="logic">
+      <obj_property name="ElementShortName">clk_240</obj_property>
+      <obj_property name="ObjectShortName">clk_240</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/tick" type="logic">
+      <obj_property name="ElementShortName">tick</obj_property>
+      <obj_property name="ObjectShortName">tick</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/clk_240_gbt" type="logic">
+      <obj_property name="ElementShortName">clk_240_gbt</obj_property>
+      <obj_property name="ObjectShortName">clk_240_gbt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/tick_gbt" type="logic">
+      <obj_property name="ElementShortName">tick_gbt</obj_property>
+      <obj_property name="ObjectShortName">tick_gbt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/Counter_b" type="other">
+      <obj_property name="ElementShortName">Counter_b</obj_property>
+      <obj_property name="ObjectShortName">Counter_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/Counter_b_gbt" type="other">
+      <obj_property name="ElementShortName">Counter_b_gbt</obj_property>
+      <obj_property name="ObjectShortName">Counter_b_gbt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/tickpipe" type="array">
+      <obj_property name="ElementShortName">tickpipe[6:1]</obj_property>
+      <obj_property name="ObjectShortName">tickpipe[6:1]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/bcid" type="array">
+      <obj_property name="ElementShortName">bcid[11:0]</obj_property>
+      <obj_property name="ObjectShortName">bcid[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/Counter_bcid" type="array">
+      <obj_property name="ElementShortName">Counter_bcid[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Counter_bcid[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/orbitid" type="array">
+      <obj_property name="ElementShortName">orbitid[31:0]</obj_property>
+      <obj_property name="ObjectShortName">orbitid[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/Counter_hb" type="other">
+      <obj_property name="ElementShortName">Counter_hb</obj_property>
+      <obj_property name="ObjectShortName">Counter_hb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/hb_del4" type="logic">
+      <obj_property name="ElementShortName">hb_del4</obj_property>
+      <obj_property name="ObjectShortName">hb_del4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/tf" type="logic">
+      <obj_property name="ElementShortName">tf</obj_property>
+      <obj_property name="ObjectShortName">tf</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/tf_ff" type="logic">
+      <obj_property name="ElementShortName">tf_ff</obj_property>
+      <obj_property name="ObjectShortName">tf_ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/gbt_rx_clk240_en_s" type="array">
+      <obj_property name="ElementShortName">gbt_rx_clk240_en_s[1:2]</obj_property>
+      <obj_property name="ObjectShortName">gbt_rx_clk240_en_s[1:2]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/gbt_rx_wordclk_s" type="array">
+      <obj_property name="ElementShortName">gbt_rx_wordclk_s[1:2]</obj_property>
+      <obj_property name="ObjectShortName">gbt_rx_wordclk_s[1:2]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/gbt_rx_data_s" type="array">
+      <obj_property name="ElementShortName">gbt_rx_data_s[83:0]</obj_property>
+      <obj_property name="ObjectShortName">gbt_rx_data_s[83:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/gbt_rx_data_user_s" type="array">
+      <obj_property name="ElementShortName">gbt_rx_data_user_s[83:0]</obj_property>
+      <obj_property name="ObjectShortName">gbt_rx_data_user_s[83:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/gbt1_tx_data" type="array">
+      <obj_property name="ElementShortName">gbt1_tx_data[79:0]</obj_property>
+      <obj_property name="ObjectShortName">gbt1_tx_data[79:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/ir_state_machine_codes_s" type="array">
+      <obj_property name="ElementShortName">ir_state_machine_codes_s[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ir_state_machine_codes_s[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/gbt_din_wr" type="logic">
+      <obj_property name="ElementShortName">gbt_din_wr</obj_property>
+      <obj_property name="ObjectShortName">gbt_din_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/SOR_sent" type="logic">
+      <obj_property name="ElementShortName">SOR_sent</obj_property>
+      <obj_property name="ObjectShortName">SOR_sent</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/EOR_sent" type="logic">
+      <obj_property name="ElementShortName">EOR_sent</obj_property>
+      <obj_property name="ObjectShortName">EOR_sent</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/clk_del" type="logic">
+      <obj_property name="ElementShortName">clk_del</obj_property>
+      <obj_property name="ObjectShortName">clk_del</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/fileEOF" type="logic">
+      <obj_property name="ElementShortName">fileEOF</obj_property>
+      <obj_property name="ObjectShortName">fileEOF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/orbit" type="logic">
+      <obj_property name="ElementShortName">orbit</obj_property>
+      <obj_property name="ObjectShortName">orbit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/ir_data_s" type="array">
+      <obj_property name="ElementShortName">ir_data_s[47:0]</obj_property>
+      <obj_property name="ObjectShortName">ir_data_s[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/data" type="array">
+      <obj_property name="ElementShortName">data[79:0]</obj_property>
+      <obj_property name="ObjectShortName">data[79:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/data_valid" type="logic">
+      <obj_property name="ElementShortName">data_valid</obj_property>
+      <obj_property name="ObjectShortName">data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/s_pixel_coord" type="array">
+      <obj_property name="ElementShortName">s_pixel_coord[18:0]</obj_property>
+      <obj_property name="ObjectShortName">s_pixel_coord[18:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/s_pixel_ready" type="logic">
+      <obj_property name="ElementShortName">s_pixel_ready</obj_property>
+      <obj_property name="ObjectShortName">s_pixel_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/C_CLK_FREQ" type="other">
+      <obj_property name="ElementShortName">C_CLK_FREQ</obj_property>
+      <obj_property name="ObjectShortName">C_CLK_FREQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/C_CLK_PERIOD" type="other">
+      <obj_property name="ElementShortName">C_CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">C_CLK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/clk_i" type="logic">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/rst_i" type="logic">
+      <obj_property name="ElementShortName">rst_i</obj_property>
+      <obj_property name="ObjectShortName">rst_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/pixel_coord_o" type="array">
+      <obj_property name="ElementShortName">pixel_coord_o[18:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_coord_o[18:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/pixel_ready_o" type="logic">
+      <obj_property name="ElementShortName">pixel_ready_o</obj_property>
+      <obj_property name="ObjectShortName">pixel_ready_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/data_i" type="array">
+      <obj_property name="ElementShortName">data_i[79:0]</obj_property>
+      <obj_property name="ObjectShortName">data_i[79:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/data_valid_i" type="logic">
+      <obj_property name="ElementShortName">data_valid_i</obj_property>
+      <obj_property name="ObjectShortName">data_valid_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/c_HEADER_SIZE" type="array">
+      <obj_property name="ElementShortName">c_HEADER_SIZE[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c_HEADER_SIZE[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/c_HEADER_VERSION" type="array">
+      <obj_property name="ElementShortName">c_HEADER_VERSION[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c_HEADER_VERSION[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_data" type="array">
+      <obj_property name="ElementShortName">s_data[79:0]</obj_property>
+      <obj_property name="ObjectShortName">s_data[79:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_detector_field" type="array">
+      <obj_property name="ElementShortName">s_detector_field[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_detector_field[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_source_id" type="array">
+      <obj_property name="ElementShortName">s_source_id[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_source_id[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_feeid" type="array">
+      <obj_property name="ElementShortName">s_feeid[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_feeid[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_rdh_bco" type="array">
+      <obj_property name="ElementShortName">s_rdh_bco[39:0]</obj_property>
+      <obj_property name="ObjectShortName">s_rdh_bco[39:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_rdh_lhc" type="array">
+      <obj_property name="ElementShortName">s_rdh_lhc[11:0]</obj_property>
+      <obj_property name="ObjectShortName">s_rdh_lhc[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_rdh_ttype" type="array">
+      <obj_property name="ElementShortName">s_rdh_ttype[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_rdh_ttype[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_tdh_bco" type="array">
+      <obj_property name="ElementShortName">s_tdh_bco[39:0]</obj_property>
+      <obj_property name="ObjectShortName">s_tdh_bco[39:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_tdh_lhc" type="array">
+      <obj_property name="ElementShortName">s_tdh_lhc[11:0]</obj_property>
+      <obj_property name="ObjectShortName">s_tdh_lhc[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_tdh_last_bco" type="array">
+      <obj_property name="ElementShortName">s_tdh_last_bco[39:0]</obj_property>
+      <obj_property name="ObjectShortName">s_tdh_last_bco[39:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_tdh_last_lhc" type="array">
+      <obj_property name="ElementShortName">s_tdh_last_lhc[11:0]</obj_property>
+      <obj_property name="ObjectShortName">s_tdh_last_lhc[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_chip_data_fifo_in" type="array">
+      <obj_property name="ElementShortName">s_chip_data_fifo_in[0:8][71:0]</obj_property>
+      <obj_property name="ObjectShortName">s_chip_data_fifo_in[0:8][71:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_chip_data_fifo_out" type="array">
+      <obj_property name="ElementShortName">s_chip_data_fifo_out[0:8][71:0]</obj_property>
+      <obj_property name="ObjectShortName">s_chip_data_fifo_out[0:8][71:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_chip_data_valid" type="array">
+      <obj_property name="ElementShortName">s_chip_data_valid[8:0]</obj_property>
+      <obj_property name="ObjectShortName">s_chip_data_valid[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_chip_data_fifo_wr" type="array">
+      <obj_property name="ElementShortName">s_chip_data_fifo_wr[8:0]</obj_property>
+      <obj_property name="ObjectShortName">s_chip_data_fifo_wr[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_chip_data_fifo_empty" type="array">
+      <obj_property name="ElementShortName">s_chip_data_fifo_empty[8:0]</obj_property>
+      <obj_property name="ObjectShortName">s_chip_data_fifo_empty[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/c_FEE_ID" type="array">
+      <obj_property name="ElementShortName">c_FEE_ID[15:0]</obj_property>
+      <obj_property name="ObjectShortName">c_FEE_ID[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/c_PAR" type="array">
+      <obj_property name="ElementShortName">c_PAR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">c_PAR[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/c_PRIORITY_BIT" type="array">
+      <obj_property name="ElementShortName">c_PRIORITY_BIT[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c_PRIORITY_BIT[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/u_ev_cnt" type="array">
+      <obj_property name="ElementShortName">u_ev_cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ev_cnt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/u_page_cnt" type="array">
+      <obj_property name="ElementShortName">u_page_cnt[15:0]</obj_property>
+      <obj_property name="ObjectShortName">u_page_cnt[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/i_plcnt" type="other">
+      <obj_property name="ElementShortName">i_plcnt</obj_property>
+      <obj_property name="ObjectShortName">i_plcnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_hbf_stop" type="logic">
+      <obj_property name="ElementShortName">s_hbf_stop</obj_property>
+      <obj_property name="ObjectShortName">s_hbf_stop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_hbttype" type="array">
+      <obj_property name="ElementShortName">s_hbttype[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_hbttype[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_hborbit" type="array">
+      <obj_property name="ElementShortName">s_hborbit[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_hborbit[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_hbbc" type="array">
+      <obj_property name="ElementShortName">s_hbbc[11:0]</obj_property>
+      <obj_property name="ObjectShortName">s_hbbc[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_last_orbit" type="array">
+      <obj_property name="ElementShortName">s_last_orbit[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_last_orbit[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_last_bc" type="array">
+      <obj_property name="ElementShortName">s_last_bc[11:0]</obj_property>
+      <obj_property name="ObjectShortName">s_last_bc[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_ttype" type="array">
+      <obj_property name="ElementShortName">s_ttype[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_ttype[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_last_ttype" type="array">
+      <obj_property name="ElementShortName">s_last_ttype[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_last_ttype[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/HB" type="logic">
+      <obj_property name="ElementShortName">HB</obj_property>
+      <obj_property name="ObjectShortName">HB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/wasHB" type="logic">
+      <obj_property name="ElementShortName">wasHB</obj_property>
+      <obj_property name="ObjectShortName">wasHB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/wasHBpacker" type="logic">
+      <obj_property name="ElementShortName">wasHBpacker</obj_property>
+      <obj_property name="ObjectShortName">wasHBpacker</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_payload_not_sent" type="logic">
+      <obj_property name="ElementShortName">s_payload_not_sent</obj_property>
+      <obj_property name="ObjectShortName">s_payload_not_sent</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/hbf_closed" type="logic">
+      <obj_property name="ElementShortName">hbf_closed</obj_property>
+      <obj_property name="ObjectShortName">hbf_closed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_runpattern_rdh" type="array">
+      <obj_property name="ElementShortName">s_runpattern_rdh[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_runpattern_rdh[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_last_runpattern_rdh" type="array">
+      <obj_property name="ElementShortName">s_last_runpattern_rdh[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_last_runpattern_rdh[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_last_runpattern_rdh_ff" type="array">
+      <obj_property name="ElementShortName">s_last_runpattern_rdh_ff[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_last_runpattern_rdh_ff[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/hb_packer" type="logic">
+      <obj_property name="ElementShortName">hb_packer</obj_property>
+      <obj_property name="ObjectShortName">hb_packer</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/page_counter" type="array">
+      <obj_property name="ElementShortName">page_counter[15:0]</obj_property>
+      <obj_property name="ObjectShortName">page_counter[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/last_rdh_sent" type="logic">
+      <obj_property name="ElementShortName">last_rdh_sent</obj_property>
+      <obj_property name="ObjectShortName">last_rdh_sent</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/was_ctpreadout_start" type="logic">
+      <obj_property name="ElementShortName">was_ctpreadout_start</obj_property>
+      <obj_property name="ObjectShortName">was_ctpreadout_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/was_ctpreadout_start_rst" type="logic">
+      <obj_property name="ElementShortName">was_ctpreadout_start_rst</obj_property>
+      <obj_property name="ObjectShortName">was_ctpreadout_start_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/was_ctpreadout_stop" type="logic">
+      <obj_property name="ElementShortName">was_ctpreadout_stop</obj_property>
+      <obj_property name="ObjectShortName">was_ctpreadout_stop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/was_ctpreadout_stop_rst" type="logic">
+      <obj_property name="ElementShortName">was_ctpreadout_stop_rst</obj_property>
+      <obj_property name="ObjectShortName">was_ctpreadout_stop_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/rd_en_s" type="array">
+      <obj_property name="ElementShortName">rd_en_s[8:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_en_s[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/fifo_rst_s" type="logic">
+      <obj_property name="ElementShortName">fifo_rst_s</obj_property>
+      <obj_property name="ObjectShortName">fifo_rst_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_chip_data_empty" type="array">
+      <obj_property name="ElementShortName">s_chip_data_empty[8:0]</obj_property>
+      <obj_property name="ObjectShortName">s_chip_data_empty[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_chip_fifo_1_active" type="logic">
+      <obj_property name="ElementShortName">s_chip_fifo_1_active</obj_property>
+      <obj_property name="ObjectShortName">s_chip_fifo_1_active</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_chip_fifo_2_active" type="logic">
+      <obj_property name="ElementShortName">s_chip_fifo_2_active</obj_property>
+      <obj_property name="ObjectShortName">s_chip_fifo_2_active</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_chip_fifo_event_error" type="logic">
+      <obj_property name="ElementShortName">s_chip_fifo_event_error</obj_property>
+      <obj_property name="ObjectShortName">s_chip_fifo_event_error</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_chip_fifo_switch" type="logic">
+      <obj_property name="ElementShortName">s_chip_fifo_switch</obj_property>
+      <obj_property name="ObjectShortName">s_chip_fifo_switch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_pixel_coord" type="array">
+      <obj_property name="ElementShortName">s_pixel_coord[18:0]</obj_property>
+      <obj_property name="ObjectShortName">s_pixel_coord[18:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_pixel_ready" type="logic">
+      <obj_property name="ElementShortName">s_pixel_ready</obj_property>
+      <obj_property name="ObjectShortName">s_pixel_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_ps" type="other">
+      <obj_property name="ElementShortName">s_ps</obj_property>
+      <obj_property name="ObjectShortName">s_ps</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_cs" type="other">
+      <obj_property name="ElementShortName">s_cs</obj_property>
+      <obj_property name="ObjectShortName">s_cs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_ns" type="other">
+      <obj_property name="ElementShortName">s_ns</obj_property>
+      <obj_property name="ObjectShortName">s_ns</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_chip_cs" type="other">
+      <obj_property name="ElementShortName">s_chip_cs</obj_property>
+      <obj_property name="ObjectShortName">s_chip_cs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/s_chip_ns" type="other">
+      <obj_property name="ElementShortName">s_chip_ns</obj_property>
+      <obj_property name="ObjectShortName">s_chip_ns</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/device" type="array">
+      <obj_property name="ElementShortName">device[3:0]</obj_property>
+      <obj_property name="ObjectShortName">device[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/c_RDH" type="array">
+      <obj_property name="ElementShortName">c_RDH[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c_RDH[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/c_IHW" type="array">
+      <obj_property name="ElementShortName">c_IHW[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c_IHW[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/c_TDH" type="array">
+      <obj_property name="ElementShortName">c_TDH[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c_TDH[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/c_TDT" type="array">
+      <obj_property name="ElementShortName">c_TDT[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c_TDT[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/c_DDW" type="array">
+      <obj_property name="ElementShortName">c_DDW[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c_DDW[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/c_CDW" type="array">
+      <obj_property name="ElementShortName">c_CDW[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c_CDW[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/c_IDLE" type="array">
+      <obj_property name="ElementShortName">c_IDLE[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c_IDLE[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/c_PIPE_LENGTH" type="other">
+      <obj_property name="ElementShortName">c_PIPE_LENGTH</obj_property>
+      <obj_property name="ObjectShortName">c_PIPE_LENGTH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/c_SOP" type="array">
+      <obj_property name="ElementShortName">c_SOP[3:0]</obj_property>
+      <obj_property name="ObjectShortName">c_SOP[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/c_EOP" type="array">
+      <obj_property name="ElementShortName">c_EOP[3:0]</obj_property>
+      <obj_property name="ObjectShortName">c_EOP[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/c_MAX_EVENT_SIZE" type="other">
+      <obj_property name="ElementShortName">c_MAX_EVENT_SIZE</obj_property>
+      <obj_property name="ObjectShortName">c_MAX_EVENT_SIZE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/c_ZERO" type="array">
+      <obj_property name="ElementShortName">c_ZERO[31:0]</obj_property>
+      <obj_property name="ObjectShortName">c_ZERO[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctpreadout_tb/UUT/c_SOURCE_ID" type="array">
+      <obj_property name="ElementShortName">c_SOURCE_ID[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c_SOURCE_ID[7:0]</obj_property>
+   </wvobject>
+</wave_config>

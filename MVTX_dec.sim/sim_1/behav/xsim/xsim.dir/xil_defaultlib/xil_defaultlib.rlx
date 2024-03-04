@@ -1,0 +1,11 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/sphenix/MVTX_dec/MVTX_dec.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/sphenix/MVTX_dec/MVTX_dec.srcs/sim_1/imports/new/decoder_state_machine.vhd,1700590899,vhdl,,,,,,,,,,,,
+D:/sphenix/MVTX_dec/MVTX_dec.srcs/sim_1/imports/new/mvtx_decoder_tb.vhd,1701213385,vhdl2008,,,,ctpreadout_tb,,,,,,,,
+D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd,1701217475,vhdl2008,D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd,,,alpide_decoder,,,,,,,,
+D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd,1701302911,vhdl2008,D:/sphenix/MVTX_dec/MVTX_dec.srcs/sim_1/imports/new/mvtx_decoder_tb.vhd,,,decoder_state_machine,,,,,,,,
+,,,D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd,,,fifo_chipdata_72x64,,,,,,,,
+D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/sim/fifo_hitdata_19x128.v,1700608042,verilog,D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd,D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/sim/fifo_chipdata_72x64.v,,fifo_hitdata_19x128,,,,,,,,

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/sim/fifo_hitdata_19x128.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_hitdata_19x128
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/sim/fifo_chipdata_72x64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_chipdata_72x64

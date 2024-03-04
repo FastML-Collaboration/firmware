@@ -1,0 +1,35 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 9ac3af06d7734e1bb893abcd5fed3d76 --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ctpreadout_tb_behav xil_defaultlib.ctpreadout_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_textio
+Compiling package std.env
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.alpide_decoder [alpide_decoder_default]
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3_bhv_ver_s...
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3_CONV_VER(...
+Compiling module fifo_generator_v13_2_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3(C_COMMON_...
+Compiling module xil_defaultlib.fifo_chipdata_72x64
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3_bhv_ver_s...
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3_CONV_VER(...
+Compiling module fifo_generator_v13_2_3.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_2_3.fifo_generator_v13_2_3(C_COMMON_...
+Compiling module xil_defaultlib.fifo_hitdata_19x128
+Compiling architecture rtl of entity xil_defaultlib.decoder_state_machine [decoder_state_machine_default]
+Compiling architecture tb of entity xil_defaultlib.ctpreadout_tb
+Built simulation snapshot ctpreadout_tb_behav

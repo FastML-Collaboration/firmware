@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'decoder_state_machine'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/sphenix/MVTX_dec/MVTX_dec.srcs/sim_1/imports/new/mvtx_decoder_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ctpreadout_tb'
