@@ -41,7 +41,8 @@ entity decoder_state_machine is
 	data_i		              : in  std_logic_vector(79 downto 0);
 	data_valid_i              : in std_logic;
     pixel_coord_o             : out t_pixel_coord;
-    pixel_ready_o              : out std_logic_vector(8 downto 0);
+    pixel_valid_o              : out std_logic_vector(8 downto 0);
+    pixel_read_i              : in std_logic_vector(8 downto 0);
 	decoder_mon_o              : out std_logic_vector(55 downto 0)
     --------------------------------------------------------------------------------
     -- MONITORING
@@ -106,6 +107,9 @@ architecture rtl of decoder_state_machine is
   
   --   signal s_pixel_coord              : std_logic_vector(18 downto 0):= (others => '0');
   signal s_pixel_ready              : std_logic_vector(8 downto 0) := (others => '0');
+  
+  signal s_pixel_valid              : std_logic_vector(8 downto 0) := (others => '0');
+  --signal s_pixel_read_in              : std_logic_vector(8 downto 0) := (others => '0');
     
   signal s_pixel_read              : std_logic_vector(8 downto 0) := (others => '0');
   signal s_pixel_coord_out: t_pixel_coord;  
@@ -283,12 +287,12 @@ begin
 pixel_fifo: entity work.fifo_hitdata_19x128
     PORT MAP (
         CLK => clk_i,
-        VALID => open,
+        VALID => s_pixel_valid(m),
         SRST => fifo_rst_s,
         wr_rst_busy => open,
         rd_rst_busy => open,
         WR_EN => s_pixel_ready(m),
-        RD_EN => s_pixel_read(m),
+        RD_EN => pixel_read_i(m),
         DIN => s_pixel_coord(m),--(m),
         DOUT => s_pixel_coord_out(m),
         FULL => open,
@@ -296,9 +300,8 @@ pixel_fifo: entity work.fifo_hitdata_19x128
       );
 end generate; 
 
-pixel_coord_o <=  s_pixel_coord;
-pixel_ready_o <= s_pixel_ready;
-s_pixel_read <= (others => '1');
+pixel_coord_o <=  s_pixel_coord_out;
+pixel_valid_o <= s_pixel_valid;
 decoder_mon_o <= s_alpide_mon & s_mon_RDH;
 
 end rtl;
