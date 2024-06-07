@@ -25,15 +25,6 @@ use IEEE.numeric_std.all;
 use ieee.std_logic_misc.all;
 use ieee.std_logic_unsigned.all;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 entity alpide_decoder is
     port (
     clk_i                     : in  std_logic;
@@ -49,13 +40,13 @@ entity alpide_decoder is
 	
 	fifo_empty_i              : in std_logic;
 	
-	fifo_read_o              : out std_logic
+	fifo_read_o              : out std_logic;
+	
+	alpide_mon_o       : out std_logic_vector(3 downto 0)
 	);
 end alpide_decoder;
 
 architecture Behavioral of alpide_decoder is
-
-
     constant c_IDLE_1                : std_logic_vector(3 downto 0)  := x"f";
     constant c_IDLE_2                : std_logic_vector(3 downto 0)  := x"0";
     constant c_HEADER                : std_logic_vector(3 downto 0)  := x"a";
@@ -102,6 +93,8 @@ architecture Behavioral of alpide_decoder is
     signal s_arbiter                 : std_logic := '0';
     signal s_data_valid              : std_logic := '0';
     signal s_idle                    : std_logic := '0';
+    
+     signal s_alpide_mon              : std_logic_vector(3 downto 0);
 
 
     type chip_states is (
@@ -114,8 +107,7 @@ architecture Behavioral of alpide_decoder is
         DATA_LONG,
         BUSY_ON,
         BUSY_OFF
-    );
-    
+    );   
     signal s_chip_cs           : chip_states;
 
 begin
@@ -135,14 +127,16 @@ p_decode : process(clk_i) begin
         s_data_long_decode <= '0';
         s_data_valid <= '0';
         s_idle <= '0';
+        s_alpide_mon(1 downto 0) <= (others => '0');
 
         -- read data from chip buffer
         if ((s_fifo_read_request = '1' or bytes_on_stack = 0) and fifo_empty_i = '0' and s_fifo_read_wait_ff1 = '0' and s_fifo_read_wait_ff2 = '0' and s_fifo_read_wait_ff3 = '0') then
             fifo_read_o <= '1';
+            s_alpide_mon(0) <= '1';
             s_fifo_read_wait_ff1 <= '1';         
             s_fifo_read_request <= '0';   
         else
-            fifo_read_o <= '0';    
+            fifo_read_o <= '0';
             s_fifo_read_wait_ff1 <= '0';  
         end if;
     
@@ -150,12 +144,13 @@ p_decode : process(clk_i) begin
         if fifo_valid_i = '1' then
             s_data <= data_i(71 downto 0);
             s_data_valid <= '1';
+            s_alpide_mon(1) <= '1';
             -- memory empty or idle, push directly to shift register (saves one cycle)
             if (bytes_on_stack = 0 or bytes_on_stack = 9 ) then
                 data_shift <= data_i(71 downto 0);
             end if;
             -- update data in memory
-            bytes_on_stack <= 9;          
+            bytes_on_stack <= 9;        
         end if;
     
         -- process only if allowed to proccess (no long word decoding or waiting for new data)
@@ -283,11 +278,13 @@ p_write_hit : process(clk_i) begin
     if rising_edge(clk_i) then   
         s_data_long_decoding_done <= '0';
         s_pixel_ready <= '0';
+        s_alpide_mon(3 downto 2) <= (others => '0');
         -- short word
         if s_data_short_decode = '1' then
             s_col <= ((s_region_id & s_encoder_id & '0') OR ((s_addr XOR ('0' & s_addr(9 downto 1))) AND "0000000001"));
             s_row <= s_addr(9 downto 1); -- addr/2
             s_pixel_ready <= '1';
+            s_alpide_mon(2) <= '1';
         end if;
         --long word
         if s_data_long_decode = '1' and s_data_long_decoding = '1' then
@@ -301,6 +298,7 @@ p_write_hit : process(clk_i) begin
                     s_col <= ((s_region_id & s_encoder_id & '0') OR ((s_addr_shift XOR ('0' & s_addr_shift(9 downto 1))) AND "0000000001"));
                     s_row <= s_addr_shift(9 downto 1); -- addr/2
                     s_pixel_ready <= '1';
+                    s_alpide_mon(3) <= '1';
                 end if;     
             end if;
             -- rest hitmap empty, terminate decoding   
@@ -313,6 +311,7 @@ end process p_write_hit;
 
 pixel_coord_o <=  s_col & s_row;
 pixel_ready_o <= s_pixel_ready;
+alpide_mon_o <= s_alpide_mon;
     
     
 end Behavioral;

@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Mar  6 22:14:43 2024
+# Process ID: 3828
+# Current directory: D:/sphenix/MVTX_dec/MVTX_decoder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9884 D:\sphenix\MVTX_dec\MVTX_decoder\MVTX_dec.xpr
+# Log file: D:/sphenix/MVTX_dec/MVTX_decoder/vivado.log
+# Journal file: D:/sphenix/MVTX_dec/MVTX_decoder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_simulation
+open_wave_config D:/sphenix/MVTX_dec/MVTX_decoder/Simulations/ctpreadout_tb_behav.wcfg
+source ctpreadout_tb.tcl
+reset
+restart
+run 1000000 ns
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_sim
+launch_simulation
+open_wave_config D:/sphenix/MVTX_dec/MVTX_decoder/Simulations/ctpreadout_tb_behav.wcfg
+source ctpreadout_tb.tcl
+save_wave_config {D:/sphenix/MVTX_dec/MVTX_decoder/Simulations/ctpreadout_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/sphenix/MVTX_dec/MVTX_decoder/Simulations/ctpreadout_tb_behav.wcfg
+source ctpreadout_tb.tcl
+run 10000000 ns
+close_sim
+launch_simulation
+open_wave_config D:/sphenix/MVTX_dec/MVTX_decoder/Simulations/ctpreadout_tb_behav.wcfg
+source ctpreadout_tb.tcl
+run 10000 ms
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_sim
+launch_simulation
+open_wave_config D:/sphenix/MVTX_dec/MVTX_decoder/Simulations/ctpreadout_tb_behav.wcfg
+source ctpreadout_tb.tcl
+run 2000 ns
+restart
+tun 1500 ns
+run 1500 ns
+close_sim
+launch_simulation
+open_wave_config D:/sphenix/MVTX_dec/MVTX_decoder/Simulations/ctpreadout_tb_behav.wcfg
+source ctpreadout_tb.tcl
+restart
+run 1500 ns
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1

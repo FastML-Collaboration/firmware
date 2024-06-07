@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/sphenix/MVTX_dec/MVTX_dec.runs/synth_1'
+HD_PWD='D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -2,47 +2,96 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue Feb 27 22:40:50 2024
-# Process ID: 3528
-# Current directory: D:/sphenix/MVTX_dec/MVTX_dec.runs/synth_1
+# Start of session at: Fri Jun  7 23:02:25 2024
+# Process ID: 9000
+# Current directory: D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.runs/synth_1
 # Command line: vivado.exe -log decoder_state_machine.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source decoder_state_machine.tcl
-# Log file: D:/sphenix/MVTX_dec/MVTX_dec.runs/synth_1/decoder_state_machine.vds
-# Journal file: D:/sphenix/MVTX_dec/MVTX_dec.runs/synth_1\vivado.jou
+# Log file: D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.runs/synth_1/decoder_state_machine.vds
+# Journal file: D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source decoder_state_machine.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 318.738 ; gain = 60.531
 Command: synth_design -top decoder_state_machine -part xcku115-flvf1924-2-e
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xcku115'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku115'
 INFO: [Common 17-1540] The version limit for your license is '2023.11' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4348 
+INFO: Helper process launched with PID 9912 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 470.488 ; gain = 96.738
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 469.898 ; gain = 96.348
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'decoder_state_machine' [D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'decoder_state_machine' [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd:54]
 	Parameter device bound to: 4'b1001 
-INFO: [Synth 8-6157] synthesizing module 'fifo_chipdata_72x64' [D:/sphenix/MVTX_dec/MVTX_dec.runs/synth_1/.Xil/Vivado-3528-bhamwin10/realtime/fifo_chipdata_72x64_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fifo_chipdata_72x64' (1#1) [D:/sphenix/MVTX_dec/MVTX_dec.runs/synth_1/.Xil/Vivado-3528-bhamwin10/realtime/fifo_chipdata_72x64_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'alpide_decoder' [D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:56]
-WARNING: [Synth 8-6014] Unused sequential element s_chip_cs_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:165]
-INFO: [Synth 8-4471] merging register 's_fifo_read_wait_ff1_reg' into 'fifo_read_o_reg' [D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:126]
-WARNING: [Synth 8-6014] Unused sequential element s_fifo_read_wait_ff1_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:126]
-INFO: [Synth 8-256] done synthesizing module 'alpide_decoder' (2#1) [D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:56]
-INFO: [Synth 8-6157] synthesizing module 'fifo_hitdata_19x128' [D:/sphenix/MVTX_dec/MVTX_dec.runs/synth_1/.Xil/Vivado-3528-bhamwin10/realtime/fifo_hitdata_19x128_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fifo_hitdata_19x128' (3#1) [D:/sphenix/MVTX_dec/MVTX_dec.runs/synth_1/.Xil/Vivado-3528-bhamwin10/realtime/fifo_hitdata_19x128_stub.v:6]
-WARNING: [Synth 8-6014] Unused sequential element s_cs_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd:255]
-WARNING: [Synth 8-6014] Unused sequential element s_detector_field_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd:256]
-WARNING: [Synth 8-6014] Unused sequential element s_source_id_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd:257]
-WARNING: [Synth 8-6014] Unused sequential element s_rdh_bco_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd:261]
-WARNING: [Synth 8-6014] Unused sequential element s_rdh_lhc_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd:262]
-WARNING: [Synth 8-6014] Unused sequential element s_rdh_ttype_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd:265]
-WARNING: [Synth 8-6014] Unused sequential element s_tdh_bco_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd:273]
-WARNING: [Synth 8-6014] Unused sequential element s_tdh_lhc_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd:274]
-INFO: [Synth 8-256] done synthesizing module 'decoder_state_machine' (4#1) [D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd:53]
+INFO: [Synth 8-6157] synthesizing module 'fifo_chipdata_72x64' [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.runs/synth_1/.Xil/Vivado-9000-bhamwin10/realtime/fifo_chipdata_72x64_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_chipdata_72x64' (1#1) [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.runs/synth_1/.Xil/Vivado-9000-bhamwin10/realtime/fifo_chipdata_72x64_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'alpide_decoder' [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:49]
+WARNING: [Synth 8-6014] Unused sequential element s_chip_cs_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:160]
+INFO: [Synth 8-4471] merging register 's_fifo_read_wait_ff1_reg' into 'fifo_read_o_reg' [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:118]
+WARNING: [Synth 8-6014] Unused sequential element s_fifo_read_wait_ff1_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'alpide_decoder' (2#1) [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'alpide_decoder__parameterized0' [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:49]
+WARNING: [Synth 8-6014] Unused sequential element s_chip_cs_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:160]
+INFO: [Synth 8-4471] merging register 's_fifo_read_wait_ff1_reg' into 'fifo_read_o_reg' [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:118]
+WARNING: [Synth 8-6014] Unused sequential element s_fifo_read_wait_ff1_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'alpide_decoder__parameterized0' (2#1) [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'alpide_decoder__parameterized1' [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:49]
+WARNING: [Synth 8-6014] Unused sequential element s_chip_cs_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:160]
+INFO: [Synth 8-4471] merging register 's_fifo_read_wait_ff1_reg' into 'fifo_read_o_reg' [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:118]
+WARNING: [Synth 8-6014] Unused sequential element s_fifo_read_wait_ff1_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'alpide_decoder__parameterized1' (2#1) [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'alpide_decoder__parameterized2' [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:49]
+WARNING: [Synth 8-6014] Unused sequential element s_chip_cs_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:160]
+INFO: [Synth 8-4471] merging register 's_fifo_read_wait_ff1_reg' into 'fifo_read_o_reg' [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:118]
+WARNING: [Synth 8-6014] Unused sequential element s_fifo_read_wait_ff1_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'alpide_decoder__parameterized2' (2#1) [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'alpide_decoder__parameterized3' [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:49]
+WARNING: [Synth 8-6014] Unused sequential element s_chip_cs_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:160]
+INFO: [Synth 8-4471] merging register 's_fifo_read_wait_ff1_reg' into 'fifo_read_o_reg' [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:118]
+WARNING: [Synth 8-6014] Unused sequential element s_fifo_read_wait_ff1_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'alpide_decoder__parameterized3' (2#1) [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'alpide_decoder__parameterized4' [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:49]
+WARNING: [Synth 8-6014] Unused sequential element s_chip_cs_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:160]
+INFO: [Synth 8-4471] merging register 's_fifo_read_wait_ff1_reg' into 'fifo_read_o_reg' [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:118]
+WARNING: [Synth 8-6014] Unused sequential element s_fifo_read_wait_ff1_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'alpide_decoder__parameterized4' (2#1) [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'alpide_decoder__parameterized5' [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:49]
+WARNING: [Synth 8-6014] Unused sequential element s_chip_cs_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:160]
+INFO: [Synth 8-4471] merging register 's_fifo_read_wait_ff1_reg' into 'fifo_read_o_reg' [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:118]
+WARNING: [Synth 8-6014] Unused sequential element s_fifo_read_wait_ff1_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'alpide_decoder__parameterized5' (2#1) [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'alpide_decoder__parameterized6' [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:49]
+WARNING: [Synth 8-6014] Unused sequential element s_chip_cs_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:160]
+INFO: [Synth 8-4471] merging register 's_fifo_read_wait_ff1_reg' into 'fifo_read_o_reg' [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:118]
+WARNING: [Synth 8-6014] Unused sequential element s_fifo_read_wait_ff1_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'alpide_decoder__parameterized6' (2#1) [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'alpide_decoder__parameterized7' [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:49]
+WARNING: [Synth 8-6014] Unused sequential element s_chip_cs_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:160]
+INFO: [Synth 8-4471] merging register 's_fifo_read_wait_ff1_reg' into 'fifo_read_o_reg' [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:118]
+WARNING: [Synth 8-6014] Unused sequential element s_fifo_read_wait_ff1_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'alpide_decoder__parameterized7' (2#1) [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/alpide_decoder.vhd:49]
+INFO: [Synth 8-6157] synthesizing module 'fifo_hitdata_19x128' [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.runs/synth_1/.Xil/Vivado-9000-bhamwin10/realtime/fifo_hitdata_19x128_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_hitdata_19x128' (3#1) [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.runs/synth_1/.Xil/Vivado-9000-bhamwin10/realtime/fifo_hitdata_19x128_stub.v:6]
+WARNING: [Synth 8-6014] Unused sequential element s_ps_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd:144]
+WARNING: [Synth 8-6014] Unused sequential element s_detector_field_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd:154]
+WARNING: [Synth 8-6014] Unused sequential element s_source_id_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd:155]
+WARNING: [Synth 8-6014] Unused sequential element s_rdh_bco_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd:160]
+WARNING: [Synth 8-6014] Unused sequential element s_rdh_lhc_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd:161]
+WARNING: [Synth 8-6014] Unused sequential element s_rdh_ttype_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd:165]
+WARNING: [Synth 8-6014] Unused sequential element s_tdh_bco_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd:173]
+WARNING: [Synth 8-6014] Unused sequential element s_tdh_lhc_reg was removed.  [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd:174]
+INFO: [Synth 8-256] done synthesizing module 'decoder_state_machine' (4#1) [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd:54]
+WARNING: [Synth 8-3331] design alpide_decoder__parameterized7 has unconnected port rst_i
+WARNING: [Synth 8-3331] design alpide_decoder__parameterized6 has unconnected port rst_i
+WARNING: [Synth 8-3331] design alpide_decoder__parameterized5 has unconnected port rst_i
+WARNING: [Synth 8-3331] design alpide_decoder__parameterized4 has unconnected port rst_i
+WARNING: [Synth 8-3331] design alpide_decoder__parameterized3 has unconnected port rst_i
+WARNING: [Synth 8-3331] design alpide_decoder__parameterized2 has unconnected port rst_i
+WARNING: [Synth 8-3331] design alpide_decoder__parameterized1 has unconnected port rst_i
+WARNING: [Synth 8-3331] design alpide_decoder__parameterized0 has unconnected port rst_i
 WARNING: [Synth 8-3331] design alpide_decoder has unconnected port rst_i
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 529.273 ; gain = 155.523
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 575.863 ; gain = 202.312
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -55,62 +104,62 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 529.273 ; gain = 155.523
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 575.863 ; gain = 202.312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 529.273 ; gain = 155.523
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 575.863 ; gain = 202.312
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xcku115-flvf1924-2-e
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[0].pixel_fifo'
-Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[0].pixel_fifo'
-Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[1].pixel_fifo'
-Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[1].pixel_fifo'
-Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[2].pixel_fifo'
-Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[2].pixel_fifo'
-Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[3].pixel_fifo'
-Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[3].pixel_fifo'
-Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[4].pixel_fifo'
-Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[4].pixel_fifo'
-Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[5].pixel_fifo'
-Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[5].pixel_fifo'
-Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[6].pixel_fifo'
-Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[6].pixel_fifo'
-Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[7].pixel_fifo'
-Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[7].pixel_fifo'
-Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[8].pixel_fifo'
-Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[8].pixel_fifo'
-Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[0].chip_fifo'
-Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[0].chip_fifo'
-Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[1].chip_fifo'
-Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[1].chip_fifo'
-Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[2].chip_fifo'
-Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[2].chip_fifo'
-Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[3].chip_fifo'
-Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[3].chip_fifo'
-Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[4].chip_fifo'
-Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[4].chip_fifo'
-Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[5].chip_fifo'
-Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[5].chip_fifo'
-Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[6].chip_fifo'
-Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[6].chip_fifo'
-Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[7].chip_fifo'
-Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[7].chip_fifo'
-Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[8].chip_fifo'
-Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[8].chip_fifo'
+Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[0].pixel_fifo'
+Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[0].pixel_fifo'
+Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[1].pixel_fifo'
+Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[1].pixel_fifo'
+Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[2].pixel_fifo'
+Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[2].pixel_fifo'
+Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[3].pixel_fifo'
+Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[3].pixel_fifo'
+Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[4].pixel_fifo'
+Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[4].pixel_fifo'
+Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[5].pixel_fifo'
+Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[5].pixel_fifo'
+Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[6].pixel_fifo'
+Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[6].pixel_fifo'
+Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[7].pixel_fifo'
+Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[7].pixel_fifo'
+Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[8].pixel_fifo'
+Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_hitdata_19x128/fifo_hitdata_19x128/fifo_hitdata_19x128_in_context.xdc] for cell 'gen_pixel_fifo_1[8].pixel_fifo'
+Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[0].chip_fifo'
+Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[0].chip_fifo'
+Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[1].chip_fifo'
+Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[1].chip_fifo'
+Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[2].chip_fifo'
+Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[2].chip_fifo'
+Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[3].chip_fifo'
+Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[3].chip_fifo'
+Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[4].chip_fifo'
+Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[4].chip_fifo'
+Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[5].chip_fifo'
+Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[5].chip_fifo'
+Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[6].chip_fifo'
+Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[6].chip_fifo'
+Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[7].chip_fifo'
+Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[7].chip_fifo'
+Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[8].chip_fifo'
+Finished Parsing XDC File [d:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/ip/fifo_chipdata_72x64/fifo_chipdata_72x64/fifo_chipdata_72x64_in_context.xdc] for cell 'gen_chips_fifo[8].chip_fifo'
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1255.352 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1289.430 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1255.352 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1255.352 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1289.430 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1289.430 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1255.352 ; gain = 881.602
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1289.430 ; gain = 915.879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -118,7 +167,7 @@ Start Loading Part and Timing Information
 Loading part: xcku115-flvf1924-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1255.352 ; gain = 881.602
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1289.430 ; gain = 915.879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -142,21 +191,31 @@ Applied set_property DONT_TOUCH = true for \gen_chips_fifo[6].chip_fifo . (const
 Applied set_property DONT_TOUCH = true for \gen_chips_fifo[7].chip_fifo . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for \gen_chips_fifo[8].chip_fifo . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1255.352 ; gain = 881.602
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1289.430 ; gain = 915.879
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "bytes_on_stack" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-WARNING: [Synth 8-3936] Found unconnected internal register 's_feeid_reg' and it is trimmed from '16' to '4' bits. [D:/sphenix/MVTX_dec/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd:258]
+INFO: [Synth 8-5544] ROM "bytes_on_stack" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bytes_on_stack" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bytes_on_stack" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bytes_on_stack" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bytes_on_stack" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bytes_on_stack" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bytes_on_stack" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bytes_on_stack" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-3936] Found unconnected internal register 's_feeid_reg' and it is trimmed from '16' to '4' bits. [D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.srcs/sources_1/imports/new/decoder_state_machine.vhd:156]
+INFO: [Synth 8-5544] ROM "s_cs" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_cs" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "s_feeid" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1255.352 ; gain = 881.602
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1289.430 ; gain = 915.879
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+---------------------------+------------+----------+
 |      |RTL Partition              |Replication |Instances |
 +------+---------------------------+------------+----------+
-|1     |decoder_state_machine__GB0 |           1|     41273|
-|2     |decoder_state_machine__GB1 |           1|     11704|
+|1     |decoder_state_machine__GB0 |           1|     41271|
+|2     |decoder_state_machine__GB1 |           1|     12029|
 +------+---------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -171,29 +230,37 @@ Detailed RTL Component Info :
 	               72 Bit    Registers := 27    
 	               40 Bit    Registers := 1     
 	               32 Bit    Registers := 9     
+	               20 Bit    Registers := 1     
 	               10 Bit    Registers := 27    
 	                9 Bit    Registers := 10    
 	                7 Bit    Registers := 18    
 	                5 Bit    Registers := 9     
-	                4 Bit    Registers := 10    
+	                4 Bit    Registers := 11    
 	                1 Bit    Registers := 126   
 +---Muxes : 
 	   3 Input     72 Bit        Muxes := 9     
-	   2 Input     72 Bit        Muxes := 118   
+	   2 Input     72 Bit        Muxes := 117   
 	  10 Input     72 Bit        Muxes := 9     
 	   2 Input     32 Bit        Muxes := 90    
+	   8 Input     20 Bit        Muxes := 1     
+	  12 Input     20 Bit        Muxes := 1     
 	   2 Input     10 Bit        Muxes := 81    
 	   2 Input      9 Bit        Muxes := 36    
-	  12 Input      9 Bit        Muxes := 1     
 	   3 Input      9 Bit        Muxes := 1     
+	  12 Input      9 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 27    
 	   2 Input      5 Bit        Muxes := 9     
-	   8 Input      2 Bit        Muxes := 10    
-	   2 Input      1 Bit        Muxes := 451   
+	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 2     
+	   8 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 497   
 	   6 Input      1 Bit        Muxes := 9     
 	   5 Input      1 Bit        Muxes := 9     
-	   4 Input      1 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 10    
 	   8 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -206,18 +273,27 @@ Detailed RTL Component Info :
 +---Registers : 
 	               72 Bit    Registers := 9     
 	               40 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
 	                9 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
 +---Muxes : 
 	   3 Input     72 Bit        Muxes := 9     
-	   2 Input     72 Bit        Muxes := 19    
+	   2 Input     72 Bit        Muxes := 18    
 	  10 Input     72 Bit        Muxes := 9     
-	  12 Input      9 Bit        Muxes := 1     
+	   8 Input     20 Bit        Muxes := 1     
+	  12 Input     20 Bit        Muxes := 1     
 	   3 Input      9 Bit        Muxes := 1     
-	   8 Input      2 Bit        Muxes := 10    
-	   2 Input      1 Bit        Muxes := 1     
+	  12 Input      9 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 2     
+	   8 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 1     
 	   8 Input      1 Bit        Muxes := 2     
-Module alpide_decoder__1 
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module alpide_decoder__parameterized1 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 3     
@@ -240,11 +316,11 @@ Detailed RTL Component Info :
 	   2 Input      9 Bit        Muxes := 4     
 	   2 Input      7 Bit        Muxes := 3     
 	   2 Input      5 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 50    
+	   2 Input      1 Bit        Muxes := 55    
 	   6 Input      1 Bit        Muxes := 1     
 	   5 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
-Module alpide_decoder__2 
+Module alpide_decoder__parameterized2 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 3     
@@ -267,11 +343,11 @@ Detailed RTL Component Info :
 	   2 Input      9 Bit        Muxes := 4     
 	   2 Input      7 Bit        Muxes := 3     
 	   2 Input      5 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 50    
+	   2 Input      1 Bit        Muxes := 55    
 	   6 Input      1 Bit        Muxes := 1     
 	   5 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
-Module alpide_decoder__3 
+Module alpide_decoder__parameterized3 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 3     
@@ -294,11 +370,11 @@ Detailed RTL Component Info :
 	   2 Input      9 Bit        Muxes := 4     
 	   2 Input      7 Bit        Muxes := 3     
 	   2 Input      5 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 50    
+	   2 Input      1 Bit        Muxes := 55    
 	   6 Input      1 Bit        Muxes := 1     
 	   5 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
-Module alpide_decoder__4 
+Module alpide_decoder__parameterized4 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 3     
@@ -321,11 +397,11 @@ Detailed RTL Component Info :
 	   2 Input      9 Bit        Muxes := 4     
 	   2 Input      7 Bit        Muxes := 3     
 	   2 Input      5 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 50    
+	   2 Input      1 Bit        Muxes := 55    
 	   6 Input      1 Bit        Muxes := 1     
 	   5 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
-Module alpide_decoder__5 
+Module alpide_decoder__parameterized5 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 3     
@@ -348,11 +424,11 @@ Detailed RTL Component Info :
 	   2 Input      9 Bit        Muxes := 4     
 	   2 Input      7 Bit        Muxes := 3     
 	   2 Input      5 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 50    
+	   2 Input      1 Bit        Muxes := 55    
 	   6 Input      1 Bit        Muxes := 1     
 	   5 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
-Module alpide_decoder__6 
+Module alpide_decoder__parameterized6 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 3     
@@ -375,11 +451,11 @@ Detailed RTL Component Info :
 	   2 Input      9 Bit        Muxes := 4     
 	   2 Input      7 Bit        Muxes := 3     
 	   2 Input      5 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 50    
+	   2 Input      1 Bit        Muxes := 55    
 	   6 Input      1 Bit        Muxes := 1     
 	   5 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
-Module alpide_decoder__7 
+Module alpide_decoder__parameterized7 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 3     
@@ -402,11 +478,11 @@ Detailed RTL Component Info :
 	   2 Input      9 Bit        Muxes := 4     
 	   2 Input      7 Bit        Muxes := 3     
 	   2 Input      5 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 50    
+	   2 Input      1 Bit        Muxes := 55    
 	   6 Input      1 Bit        Muxes := 1     
 	   5 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
-Module alpide_decoder__8 
+Module alpide_decoder__parameterized0 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 3     
@@ -429,7 +505,7 @@ Detailed RTL Component Info :
 	   2 Input      9 Bit        Muxes := 4     
 	   2 Input      7 Bit        Muxes := 3     
 	   2 Input      5 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 50    
+	   2 Input      1 Bit        Muxes := 55    
 	   6 Input      1 Bit        Muxes := 1     
 	   5 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
@@ -456,7 +532,7 @@ Detailed RTL Component Info :
 	   2 Input      9 Bit        Muxes := 4     
 	   2 Input      7 Bit        Muxes := 3     
 	   2 Input      5 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 50    
+	   2 Input      1 Bit        Muxes := 55    
 	   6 Input      1 Bit        Muxes := 1     
 	   5 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
@@ -483,45 +559,44 @@ INFO: [Synth 8-5544] ROM "bytes_on_stack" won't be mapped to Block RAM because a
 INFO: [Synth 8-5544] ROM "bytes_on_stack" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "bytes_on_stack" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "bytes_on_stack" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "s_feeid" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "bytes_on_stack" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "bytes_on_stack" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1255.352 ; gain = 881.602
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 1290.324 ; gain = 916.773
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+---------------------------+------------+----------+
 |      |RTL Partition              |Replication |Instances |
 +------+---------------------------+------------+----------+
-|1     |decoder_state_machine__GB0 |           1|     22382|
-|2     |decoder_state_machine__GB1 |           1|      5973|
+|1     |decoder_state_machine__GB0 |           1|     23627|
+|2     |decoder_state_machine__GB1 |           1|      6829|
 +------+---------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 1441.645 ; gain = 1067.895
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:28 ; elapsed = 00:01:38 . Memory (MB): peak = 1445.242 ; gain = 1071.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 1441.719 ; gain = 1067.969
+Finished Timing Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:38 . Memory (MB): peak = 1445.391 ; gain = 1071.840
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+---------------------------+------------+----------+
 |      |RTL Partition              |Replication |Instances |
 +------+---------------------------+------------+----------+
-|1     |decoder_state_machine__GB0 |           1|     22382|
-|2     |decoder_state_machine__GB1 |           1|      5973|
+|1     |decoder_state_machine__GB0 |           1|     23627|
+|2     |decoder_state_machine__GB1 |           1|      6829|
 +------+---------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:15 ; elapsed = 00:01:23 . Memory (MB): peak = 1687.750 ; gain = 1314.000
+Finished Technology Mapping : Time (s): cpu = 00:01:34 ; elapsed = 00:01:43 . Memory (MB): peak = 1668.141 ; gain = 1294.590
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -545,7 +620,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:17 ; elapsed = 00:01:26 . Memory (MB): peak = 1687.750 ; gain = 1314.000
+Finished IO Insertion : Time (s): cpu = 00:01:36 ; elapsed = 00:01:45 . Memory (MB): peak = 1668.141 ; gain = 1294.590
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -558,7 +633,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:17 ; elapsed = 00:01:26 . Memory (MB): peak = 1687.750 ; gain = 1314.000
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:36 ; elapsed = 00:01:45 . Memory (MB): peak = 1668.141 ; gain = 1294.590
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -570,25 +645,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:17 ; elapsed = 00:01:26 . Memory (MB): peak = 1687.750 ; gain = 1314.000
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:36 ; elapsed = 00:01:46 . Memory (MB): peak = 1668.141 ; gain = 1294.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:17 ; elapsed = 00:01:26 . Memory (MB): peak = 1687.750 ; gain = 1314.000
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:36 ; elapsed = 00:01:46 . Memory (MB): peak = 1668.141 ; gain = 1294.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:18 ; elapsed = 00:01:27 . Memory (MB): peak = 1687.750 ; gain = 1314.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:38 ; elapsed = 00:01:48 . Memory (MB): peak = 1668.141 ; gain = 1294.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:18 ; elapsed = 00:01:27 . Memory (MB): peak = 1687.750 ; gain = 1314.000
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:38 ; elapsed = 00:01:48 . Memory (MB): peak = 1668.141 ; gain = 1294.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -626,57 +701,57 @@ Report Cell Usage:
 |18    |fifo_hitdata_19x128__9  |     1|
 |19    |BUFG                    |     1|
 |20    |CARRY8                  |   164|
-|21    |LUT1                    |   846|
-|22    |LUT2                    |  1648|
-|23    |LUT3                    |   793|
-|24    |LUT4                    |  1199|
-|25    |LUT5                    |   935|
-|26    |LUT6                    |  2844|
-|27    |FDRE                    |  2904|
-|28    |FDSE                    |    65|
+|21    |LUT1                    |   829|
+|22    |LUT2                    |   978|
+|23    |LUT3                    |  1205|
+|24    |LUT4                    |   365|
+|25    |LUT5                    |  1221|
+|26    |LUT6                    |  4732|
+|27    |FDRE                    |  2948|
+|28    |FDSE                    |    81|
 |29    |IBUF                    |    83|
-|30    |OBUF                    |    20|
+|30    |OBUF                    |   236|
 +------+------------------------+------+
 
 Report Instance Areas: 
-+------+-------------------------------------+-----------------+------+
-|      |Instance                             |Module           |Cells |
-+------+-------------------------------------+-----------------+------+
-|1     |top                                  |                 | 12411|
-|2     |  \gen_alpide_decoder[0].alpide_dec  |alpide_decoder   |  1107|
-|3     |  \gen_alpide_decoder[1].alpide_dec  |alpide_decoder_0 |  1111|
-|4     |  \gen_alpide_decoder[2].alpide_dec  |alpide_decoder_1 |  1111|
-|5     |  \gen_alpide_decoder[3].alpide_dec  |alpide_decoder_2 |  1111|
-|6     |  \gen_alpide_decoder[4].alpide_dec  |alpide_decoder_3 |  1111|
-|7     |  \gen_alpide_decoder[5].alpide_dec  |alpide_decoder_4 |  1111|
-|8     |  \gen_alpide_decoder[6].alpide_dec  |alpide_decoder_5 |  1111|
-|9     |  \gen_alpide_decoder[7].alpide_dec  |alpide_decoder_6 |  1111|
-|10    |  \gen_alpide_decoder[8].alpide_dec  |alpide_decoder_7 |  1111|
-+------+-------------------------------------+-----------------+------+
++------+-------------------------------------+-------------------------------+------+
+|      |Instance                             |Module                         |Cells |
++------+-------------------------------------+-------------------------------+------+
+|1     |top                                  |                               | 13752|
+|2     |  \gen_alpide_decoder[0].alpide_dec  |alpide_decoder                 |  1229|
+|3     |  \gen_alpide_decoder[1].alpide_dec  |alpide_decoder__parameterized0 |  1229|
+|4     |  \gen_alpide_decoder[2].alpide_dec  |alpide_decoder__parameterized1 |  1229|
+|5     |  \gen_alpide_decoder[3].alpide_dec  |alpide_decoder__parameterized2 |  1229|
+|6     |  \gen_alpide_decoder[4].alpide_dec  |alpide_decoder__parameterized3 |  1229|
+|7     |  \gen_alpide_decoder[5].alpide_dec  |alpide_decoder__parameterized4 |  1229|
+|8     |  \gen_alpide_decoder[6].alpide_dec  |alpide_decoder__parameterized5 |  1229|
+|9     |  \gen_alpide_decoder[7].alpide_dec  |alpide_decoder__parameterized6 |  1229|
+|10    |  \gen_alpide_decoder[8].alpide_dec  |alpide_decoder__parameterized7 |  1229|
++------+-------------------------------------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:18 ; elapsed = 00:01:27 . Memory (MB): peak = 1687.750 ; gain = 1314.000
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:38 ; elapsed = 00:01:48 . Memory (MB): peak = 1668.141 ; gain = 1294.590
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:02 ; elapsed = 00:01:13 . Memory (MB): peak = 1687.750 ; gain = 587.922
-Synthesis Optimization Complete : Time (s): cpu = 00:01:18 ; elapsed = 00:01:27 . Memory (MB): peak = 1687.750 ; gain = 1314.000
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:20 ; elapsed = 00:01:34 . Memory (MB): peak = 1668.141 ; gain = 581.023
+Synthesis Optimization Complete : Time (s): cpu = 00:01:38 ; elapsed = 00:01:48 . Memory (MB): peak = 1668.141 ; gain = 1294.590
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 248 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1698.375 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1678.676 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 84 instances were transformed.
   BUFG => BUFGCE: 1 instances
   IBUF => IBUF (IBUFCTRL, INBUF): 83 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-34 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+67 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:34 . Memory (MB): peak = 1698.375 ; gain = 1325.688
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1698.375 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:46 ; elapsed = 00:01:56 . Memory (MB): peak = 1678.676 ; gain = 1305.938
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1678.676 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'D:/sphenix/MVTX_dec/MVTX_dec.runs/synth_1/decoder_state_machine.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'D:/sphenix/MVTX_dec/MVTX_decoder/MVTX_dec.runs/synth_1/decoder_state_machine.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file decoder_state_machine_utilization_synth.rpt -pb decoder_state_machine_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Feb 27 22:42:35 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  7 23:04:48 2024...
